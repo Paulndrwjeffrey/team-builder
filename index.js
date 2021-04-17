@@ -53,15 +53,12 @@ function addEmployee(answers) {
     switch(answers.role) {
         case 'Manager':
             employees.push(new Manager(answers.name, answers.id, answers.email, answers.officeNum))
-            console.log(employees)
             return addAnother()
         case 'Engineer':
             employees.push(new Engineer(answers.name, answers.id, answers.email, answers.github))
-            console.log(employees)
             return addAnother()
         case 'Intern':
             employees.push(new Intern(answers.name, answers.id, answers.email, answers.school))
-            console.log(employees)
             return addAnother()    
     }
 }
@@ -102,7 +99,7 @@ function generateHTML(employees) {
 </head>
 <body>
     <header>
-        <h1>My Fucking Team</h1>
+        <h1>My Team</h1>
     </header>
     <main>`
 
